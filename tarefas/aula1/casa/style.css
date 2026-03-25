@@ -1,0 +1,51 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  /* NAVBAR */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #222;
+  }
+  
+  /* Menu padrão (desktop) */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Conteúdo não ficar escondido */
+  main {
+    margin-top: 60px;
+    padding: 20px;
+  }
+  
+  /* 🔥 RESPONSIVO (mobile) */
+  @media (max-width: 600px) {
+  
+    nav ul {
+      flex-direction: column;   /* vira vertical */
+      align-items: center;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  }

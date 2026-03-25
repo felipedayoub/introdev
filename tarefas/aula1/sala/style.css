@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#cabecalho {
+    width: 100%;
+    background-image: url('https://uspdigital.usp.br/comumwebdev/imagens/cabecalho/bg-headtop.gif');
+    margin-bottom: 5px;
+    text-align: right;
+    color: white;
+    padding: 10px;
+    font-family: Verdana, sans-serif;
+    font-size: 0.8rem;
+}
+
+main {
+    flex: 1; 
+    color: blue;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #eee;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    background-color: orange;
+    padding: 10px 20px;
+    border: none;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #cabecalho {
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    main {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
