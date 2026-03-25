@@ -1,4 +1,9 @@
-# Casa de Malhas
+# Introdução ao Desenvolvimento de Sistemas de Software (2026)
+Este repositório contém tarefas de casa/sala e projeto individual, referentes
+à disciplina MAC0350, do quinto semestre do curso de Ciência da Computação (IME-USP).
+Abaixo está um esboço do projeto individual, que está em fase de desenvolvimento.
+
+## Casa de Malhas
 
 ### Descrição
 
