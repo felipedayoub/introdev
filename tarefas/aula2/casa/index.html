@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2: Tarefa de Casa</title>
+</head>
+<body>
+
+<h1>Desafio 1</h1>
+<button id="botao" onclick="alternarLuz()">A luz está APAGADA</button>
+
+<h1>Desafio 2</h2>
+<h2 id="mostra_valor"></h2>
+<button onclick="dobra()">Dobrar</button>
+
+
+
+<script>
+
+    const botao = document.querySelector("#botao");
+    let valor = 2;
+    const mostra_valor = document.querySelector("#mostra_valor");
+    mostra_valor.textContent = valor;
+
+
+    function alternarLuz() {
+        if (botao.textContent === "A luz está APAGADA") {
+            botao.textContent = "A luz está ACESA";
+        }
+        else {
+            botao.textContent = "A luz está APAGADA";
+        }
+    }
+
+    function dobra() {
+        valor = valor*2;
+        mostra_valor.textContent = valor;
+        if (valor>100) {
+            alert(`Cuidado, o número ${valor} está ficando muito grande!`);
+        } 
+    }
+
+
+
+</script>
+
+</body>
+</html>
