@@ -23,3 +23,7 @@ um site de uma empresa real.
 
 Além disso, vale destacar que o projeto ainda está "no papel", portanto,
 é possível que novas ideias possam surgir até a entrega do trabalho.
+
+### Observação
+
+As tarefas de aula e de casa foram todas escritas pelo aluno. No entanto, algumas partes do arquivo main.py do projeto foram geradas por IA. 
