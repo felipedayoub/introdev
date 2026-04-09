@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/htmx.org"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="header">
+    {% if user %}
+        <div>
+            Logado como <b>{{ user.username }}</b>
+            <button 
+                hx-post="/logout" 
+                hx-target="#login-status"
+                hx-on:afterRequest="location.reload()">
+                Sair
+            </button>
+        </div>
+    {% else %}
+        <form hx-post="/login" hx-target="#login-status" class="login-form">
+            <input name="username" placeholder="username">
+            <button type="submit">Login</button>
+        </form>
+    {% endif %}
+
+    <div id="login-status"></div>
+    <a href="/cart" class="cart-link">🛒 Sacola</a>
+    <a href="/" class="home-link"> Home</a>
+</header>
+<hr>
+{% block content %}{% endblock %}
+</body>
+</html>

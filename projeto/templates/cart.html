@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Sacola</h2>
+<ul>
+{% for item in items %}
+    <li>
+        Produto ID: {{ item.product_id }}
+        <button hx-delete="/cart/{{item.id}}" hx-target="closest li" hx-swap="outerHTML">
+            Remover
+        </button>
+    </li>
+{% endfor %}
+</ul>
+<button 
+    hx-delete="/cart" 
+    hx-target="#msg"
+    hx-confirm="Tem certeza que deseja limpar a sacola?">
+    Limpar sacola
+</button>
+<div id="msg"></div>
+{% endblock %}
