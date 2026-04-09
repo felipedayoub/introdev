@@ -5,7 +5,8 @@
 {% for p in products %}
     <div>
         <p>{{ p.name }} - R$ {{ p.price }}</p>
-        <button hx-post="/cart" hx-vals='{"product_id": {{p.id}} }' hx-target="#msg">
+        <img src="{{ p.file_name }}" alt="Imagem do item" width="300" height="200">
+        <button id="button{{ p.name }}" hx-post="/cart" hx-vals='{"product_id": {{p.id}} }' hx-target="#button{{ p.name }}">
             Comprar
         </button>
     </div>

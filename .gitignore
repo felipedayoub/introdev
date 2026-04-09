@@ -3,3 +3,8 @@ tarefas/aula6
 tarefas/aula4/__pycache__
 tarefas/aula4/.venv
 projeto_antigo
+.venv/
+projeto/__pycache__/
+projeto/database.db
+projeto_antigo
+projeto_individual/

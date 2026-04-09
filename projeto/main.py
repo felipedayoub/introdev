@@ -30,9 +30,9 @@ async def lifespan(app: FastAPI):
     with Session(engine) as session:
         if not session.exec(select(Product)).first():
             products = [
-                Product(name="Camiseta", price=50),
-                Product(name="Calça", price=120),
-                Product(name="Jaqueta", price=200),
+                Product(name="Camiseta", price=50, file_name="/static/tshirt.jpg"),
+                Product(name="Calça", price=120, file_name="/static/pants.jpg"),
+                Product(name="Jaqueta", price=200, file_name="/static/jacket.jpg"),
             ]
             session.add_all(products)
             session.commit()
