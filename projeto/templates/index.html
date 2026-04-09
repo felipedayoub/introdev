@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Bem-vindo {{ user.username if user else "visitante" }}</h1>
+<h1>Bem-vindo à Casa de Malhas!</h1>
+<img src="/static/welcome.jpg" alt="Boas vindas" width="300" height="300">
+<br>
 <a href="/catalog">Ir para catálogo</a>
 {% endblock %}
