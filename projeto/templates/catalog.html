@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Catálogo</h2>
+<div>
+{% for p in products %}
+    <div>
+        <p>{{ p.name }} - R$ {{ p.price }}</p>
+        <button hx-post="/cart" hx-vals='{"product_id": {{p.id}} }' hx-target="#msg">
+            Comprar
+        </button>
+    </div>
+{% endfor %}
+</div>
+<div id="msg"></div>
+<script>
+document.body.addEventListener('htmx:afterRequest', function(evt) {
+    if (evt.detail.xhr.responseText === 'NOT_LOGGED') {
+        alert('Faça login primeiro!');
+    }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form input {
+    padding: 5px;
+}
+
+.login-form button {
+    padding: 5px 10px;
+}
+
+.cart-link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div {
+    margin: 10px 0;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}

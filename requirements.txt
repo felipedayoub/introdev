@@ -1,0 +1,5 @@
+fastapi[standard]
+jinja2
+sqlmodel
+.venv
+__pycache__

@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Bem-vindo {{ user.username if user else "visitante" }}</h1>
+<a href="/catalog">Ir para catálogo</a>
+{% endblock %}
